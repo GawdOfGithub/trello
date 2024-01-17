@@ -11,7 +11,7 @@ import {
   Settings
 } from 'lucide-react'
 import { Button } from '@/components/ui/button';
-
+import { Skeleton } from '@/components/ui/skeleton';
 export type Organization = {
     id:string;
     slug:string | null,
@@ -104,3 +104,14 @@ export const NavItem = ({isExpanded,isActive,organization,onExpand}: NavItemProp
   )
 }
 
+NavItem.Skeleton = function SkeletonNavItem(){
+  return(
+    <div className='flex items-center gap-x-2'>
+      <div className='w-10 h-10 relative shrink-0'>
+      <Skeleton className="h-full w-full absolute"/>
+      </div>
+      <Skeleton className='h-10 w-full'/>
+
+    </div>
+  )
+}
