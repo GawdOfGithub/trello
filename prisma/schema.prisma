@@ -12,7 +12,7 @@ generator client {
 }
 
 
-model Boarding{
+model Board{
 id        Int      @id @default(autoincrement())
   title String 
 }
