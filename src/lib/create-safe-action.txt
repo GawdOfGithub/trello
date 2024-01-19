@@ -1,0 +1,45 @@
+"use client"
+type Props = {}
+
+export default function ComponentName({}: Props) {
+  return (
+     <>
+     </>
+  )
+}
+
+
+
+
+
+
+
+const functionName = async()=>
+{
+    try{
+
+    }
+    catch(error){
+    console.log(error);
+    }
+
+}
+
+
+
+
+import Navbar from "./_components/navbar"
+
+interface Props{
+    children:React.ReactNode
+}
+
+export default function DashboardLayout({children}:Props) {
+    return(
+        <div className="h-full">
+            <Navbar/>
+            {children}
+        </div>
+    )
+    
+}
