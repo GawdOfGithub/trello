@@ -1,3 +1,4 @@
+"use client"
 import { FormInput } from "@/components/form/form-input";
 import { Button } from "@/components/ui/button";
 import { Board } from "@prisma/client";

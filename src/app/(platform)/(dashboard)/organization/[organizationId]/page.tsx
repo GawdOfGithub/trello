@@ -6,13 +6,14 @@ import { Info } from "./_components/info";
 import BoardList from "./_components/board-list";
 
 const OrganizationIdPage = async () => {
-  const isPro = true
+
 
   return (
     <div className="w-full mb-20">
-      <Info isPro={isPro} />
+    
       <Separator className="my-4" />
       <div className="px-2 md:px-4">
+    
         <Suspense fallback={<BoardList.Skeleton />}>
           <BoardList />
         </Suspense>
@@ -22,3 +23,6 @@ const OrganizationIdPage = async () => {
 };
 
 export default OrganizationIdPage;
+
+
+
