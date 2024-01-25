@@ -2,7 +2,7 @@
 import { CreateBoard } from "@/actions/create-board/schema"
 import { useAction } from "@/hooks/use-action"
 import { FormInput } from "@/components/form/form-input"
-import { FormSubmit } from "@/components/form/form-button"
+import { FormSubmit } from "@/components/form/form-submit"
 export const Form = ()=>{
     const {execute,fieldErrors} = useAction(CreateBoard,{
         onSuccess:(data)=>{
